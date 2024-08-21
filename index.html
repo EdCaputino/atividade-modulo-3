@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lista de Tarefas</h1>
+        </header>
+
+        <main>
+            <div class="new-task">
+                <input type="text" id="taskInput" placeholder="Digite uma nova tarefa...">
+                <button id="addTaskButton">Adicionar</button>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="completed">Concluídas</button>
+                <button class="filter-btn" data-filter="pending">Pendentes</button>
+            </div>
+
+            <ul id="taskList">
+                <!-- As tarefas serão inseridas aqui dinamicamente -->
+            </ul>
+        </main>
+
+        <footer>
+            <p>Lista de Tarefas - Edilson S. Ferreira.</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
