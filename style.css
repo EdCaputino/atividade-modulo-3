@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #577FE8;
+}
+
+.new-task {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.new-task input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.new-task button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    background-color: #577FE8;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.new-task button:hover {
+    background-color: #466bce;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 5px 10px;
+    border: none;
+    background-color: #ddd;
+    color: #333;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background-color: #577FE8;
+    color: #fff;
+}
+
+#taskList {
+    list-style-type: none;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.task-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.task-item button {
+    margin-left: auto;
+    padding: 5px 10px;
+    border: none;
+    background-color: #ff4b4b;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-item button:hover {
+    background-color: #e04343;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #777;
+}
